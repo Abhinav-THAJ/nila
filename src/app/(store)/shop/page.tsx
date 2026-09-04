@@ -70,7 +70,7 @@ export default async function ShopPage({
                     href={`/shop?category=${encodeURIComponent(cat as string)}`} 
                     className={`font-medium transition-colors ${categoryFilter === cat ? 'text-orange-600 font-bold' : 'text-slate-600 hover:text-orange-500'}`}
                   >
-                    {cat}
+                    {cat as string}
                   </Link>
                 </li>
               ))}
