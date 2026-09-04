@@ -33,11 +33,11 @@ export default function AboutPage() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="flex-1 w-full h-[600px] relative rounded-3xl overflow-hidden shadow-2xl border-8 border-slate-50">
                {/* eslint-disable-next-line @next/next/no-img-element */}
-               <img 
-                 src="https://images.unsplash.com/photo-1587834515569-798835f8fcaf?w=800&auto=format&fit=crop" 
-                 alt="Traditional Kerala Cooking" 
-                 className="w-full h-full object-cover"
-               />
+                 <img 
+                   src="/kerala_cooking_fresh.jpg" 
+                   alt="Traditional Kerala Cooking" 
+                   className="w-full h-full object-cover"
+                 />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                <div className="absolute bottom-0 left-0 p-10">
                  <h3 className="text-3xl font-black text-white mb-2">Fresh & Hygienic</h3>
