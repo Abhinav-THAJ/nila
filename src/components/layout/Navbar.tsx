@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { ShoppingCart, Search, Menu, User } from "lucide-react";
+import { Search, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CartIcon } from "@/components/layout/CartIcon";
 
 export function Navbar() {
   return (
@@ -29,13 +30,7 @@ export function Navbar() {
             <User className="h-5 w-5" />
             <span className="sr-only">Account</span>
           </Button>
-          <Button variant="default" size="icon" className="bg-orange-500 hover:bg-orange-600 text-white rounded-full relative shadow-lg shadow-orange-500/30 w-10 h-10">
-            <ShoppingCart className="h-4 w-4" />
-            <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-slate-900 text-[10px] font-bold text-white">
-              0
-            </span>
-            <span className="sr-only">Cart</span>
-          </Button>
+          <CartIcon />
           <Button variant="ghost" size="icon" className="md:hidden text-slate-600">
             <Menu className="h-6 w-6" />
             <span className="sr-only">Menu</span>

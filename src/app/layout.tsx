@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { CartProvider } from "@/context/CartContext";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -27,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("scroll-smooth", "font-sans", geist.variable)}>
       <body className={`${outfit.variable} font-sans antialiased text-slate-900 bg-white`}>
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );
